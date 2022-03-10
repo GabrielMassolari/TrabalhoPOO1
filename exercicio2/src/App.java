@@ -7,7 +7,7 @@ public class App {
         }
     }
     public static void main(String[] args) throws Exception {
-        Automovel jetta = new Automovel(0, 0.1, 240, 1, 2);
+        Automovel jetta = new Automovel(0, 60, 240, 4.63, 11);
 
         for(int i = 0; i < 50; i++){
             limparTela();
@@ -16,7 +16,7 @@ public class App {
             System.out.printf("Hodometro: %.4f Km\n", jetta.getQuilometragem() / 1000);
             System.out.printf("Tanque de Gasolina: %.4f L\n", jetta.getVolumeCombustivel());
             jetta.acelerar(1);
-            Thread.sleep(1500);
+            Thread.sleep(1000);
         }
 
     }
